@@ -194,7 +194,7 @@ else
     exec "hi Special        cterm=NONE   ctermfg=" . <SID>X(55) . " ctermbg=" . "NONE"
     exec "hi SpecialChar    cterm=NONE   ctermfg=" . <SID>X(55) . " ctermbg=" . <SID>X(81)
     exec "hi Statement      cterm=NONE   ctermfg=" . <SID>X(27) . " ctermbg=" . "NONE"
-    exec "hi Todo           cterm=BOLD   ctermfg=" . <SID>X(16) . " ctermbg=" . <SID>X(57)
+    exec "hi Todo           cterm=BOLD   ctermfg=" . <SID>X(52) . " ctermbg=" . <SID>X(87)
     exec "hi Type           cterm=NONE   ctermfg=" . <SID>X(71) . " ctermbg=" . "NONE"
     exec "hi Underlined     cterm=BOLD   ctermfg=" . <SID>X(77) . " ctermbg=" . "NONE"
     exec "hi TaglistTagName cterm=BOLD   ctermfg=" . <SID>X(39) . " ctermbg=" . "NONE"
@@ -209,8 +209,17 @@ else
         exec "hi SpellRare      cterm=NONE ctermbg=" . <SID>X(33)
         exec "hi SpellLocal     cterm=NONE ctermbg=" . <SID>X(36)
         exec "hi SpellCap       cterm=NONE ctermbg=" . <SID>X(21)
-        exec "hi MatchParen     cterm=NONE ctermbg=" . <SID>X(14) . "ctermfg=" . <SID>X(25)
+        exec "hi MatchParen     cterm=NONE ctermbg=" . <SID>X(22) . "ctermfg=" . <SID>X(25)
     endif
 endif
+
+hi ColorColumn ctermbg=235 guibg=#3e3e3e
+
+hi IndentGuidesEven ctermbg=234 guibg=#2e2e2e
+hi IndentGuidesOdd  ctermbg=233 guibg=#1e1e1e
+
+hi LineNr ctermbg=235
+
+hi CursorLine ctermbg=234
 
 " vim: set et :
