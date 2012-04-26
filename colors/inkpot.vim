@@ -128,10 +128,10 @@ if has("gui_running")
     hi doxygenSpecialOnelineDesc    gui=NONE guifg=#ad600b   guibg=NONE
 
     if v:version >= 700
-        hi Pmenu          gui=NONE   guifg=#eeeeee   guibg=#4e4e8f
-        hi PmenuSel       gui=BOLD   guifg=#eeeeee   guibg=#2e2e3f
-        hi PmenuSbar      gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
-        hi PmenuThumb     gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
+        hi Pmenu          gui=NONE   guifg=#eeeeee   guibg=#2e2e3f
+        hi PmenuSel       gui=BOLD   guifg=#eeeeee   guibg=#4e4e8f
+        hi PmenuSbar      gui=BOLD   guifg=#eeeeee   guibg=#2e2e3f
+        hi PmenuThumb     gui=BOLD   guifg=#eeeeee   guibg=#4e4e8f
 
         hi SpellBad     gui=undercurl guisp=#cc6666
         hi SpellRare    gui=undercurl guisp=#cc66cc
@@ -200,10 +200,10 @@ else
     exec "hi TaglistTagName cterm=BOLD   ctermfg=" . <SID>X(39) . " ctermbg=" . "NONE"
 
     if v:version >= 700
-        exec "hi Pmenu          cterm=NONE   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(82)
-        exec "hi PmenuSel       cterm=BOLD   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(38)
-        exec "hi PmenuSbar      cterm=BOLD   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(39)
-        exec "hi PmenuThumb     cterm=BOLD   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(39)
+        exec "hi Pmenu          cterm=NONE   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(81)
+        exec "hi PmenuSel       cterm=BOLD   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(83)
+        exec "hi PmenuSbar      cterm=BOLD   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(81)
+        exec "hi PmenuThumb     cterm=BOLD   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(83)
 
         exec "hi SpellBad       cterm=NONE ctermbg=" . <SID>X(32)
         exec "hi SpellRare      cterm=NONE ctermbg=" . <SID>X(33)
