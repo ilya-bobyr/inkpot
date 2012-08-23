@@ -69,6 +69,10 @@ if has("gui_running")
     hi StatusLineNC   gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
     hi VertSplit      gui=NONE   guifg=#b9b9b9   guibg=#3e3e5e
 
+    hi TabLine        gui=NONE   guifg=NONE      guibg=#2e2e2e
+    hi TabLineFill    gui=NONE   guifg=#b9b9b9   guibg=#2e2e2e
+    hi TabLineSel     gui=BOLD   guifg=#b9b9b9   guibg=#3e3e5e
+
     hi WildMenu       gui=BOLD   guifg=#eeeeee   guibg=#6e6eaf
 
     hi MBENormal                 guifg=#cfbfad   guibg=#2e2e3f
@@ -160,6 +164,10 @@ else
     exec "hi User2          cterm=BOLD   ctermfg=" . <SID>X(39) . " ctermbg=" . <SID>X(81)
     exec "hi StatusLineNC   cterm=NONE   ctermfg=" . <SID>X(84) . " ctermbg=" . <SID>X(81)
     exec "hi VertSplit      cterm=NONE   ctermfg=" . <SID>X(84) . " ctermbg=" . <SID>X(81)
+
+    exec "hi TabLine        cterm=NONE   ctermfg=NONE               ctermbg=" . <SID>X(80)
+    exec "hi TabLineFill    cterm=NONE   ctermfg=" . <SID>X(84) . " ctermbg=" . <SID>X(80)
+    exec "hi TabLineSel     cterm=BOLD   ctermfg=" . <SID>X(84) . " ctermbg=" . <SID>X(81)
 
     exec "hi WildMenu       cterm=BOLD   ctermfg=" . <SID>X(87) . " ctermbg=" . <SID>X(38)
 
